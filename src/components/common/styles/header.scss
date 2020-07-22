@@ -17,6 +17,20 @@
       }
     }
   }
+  .navbar-toggler {
+    @media screen and (max-width: 991px) {
+      width: 30px;
+      height: 30px;
+      padding: 0;
+      border: 0;
+      outline: none !important;
+    }
+    img {
+      @media screen and (max-width: 991px) {
+        width: 100%;
+      }
+    }
+  }
 }
 .navbar-brand {
   position: relative;

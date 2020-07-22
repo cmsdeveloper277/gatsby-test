@@ -3,10 +3,16 @@ import PropTypes from "prop-types"
 import React from "react"
 import { Container, Navbar, Nav } from "react-bootstrap"
 import logo from "../../images/logo.png"
+import hamburger_icon from "../../images/hamburger-icon.svg"
+import close from "../../images/close.svg"
 import "./styles/header.scss"
 import "./styles/navigation.scss"
 
 const Header = ({ siteTitle, bgcolor }) => {
+  const [menuToggle, setMenuToggle] = React.useState(false)
+  const setMenuToggleHandler = () => {
+    setMenuToggle(!menuToggle)
+  }
   return (
     <div className={`top_menu fixed-top bg-${bgcolor}`}>
       <Container>
@@ -15,10 +21,29 @@ const Header = ({ siteTitle, bgcolor }) => {
             <img src={logo} alt={siteTitle} height="60" />
           </Navbar.Brand>
 
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle
+            aria-controls="basic-navbar-nav"
+            onClick={setMenuToggleHandler}
+          >
+            {menuToggle ? (
+              <img src={close} alt="" />
+            ) : (
+              <img src={hamburger_icon} alt="" />
+            )}
+          </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
               <ul>
+                <li>
+                  <Nav.Link
+                    as={Link}
+                    to={"/"}
+                    key={"signin"}
+                    activeClassName="active"
+                  >
+                    Home
+                  </Nav.Link>
+                </li>
                 <li>
                   <Nav.Link
                     as={Link}
