@@ -18,7 +18,7 @@ const Header = ({ siteTitle, bgcolor }) => {
       <Container>
         <Navbar expand="md">
           <Navbar.Brand href="/">
-            <img src={logo} alt={siteTitle} height="60" />
+            LOGO
           </Navbar.Brand>
 
           <Navbar.Toggle
@@ -26,7 +26,7 @@ const Header = ({ siteTitle, bgcolor }) => {
             onClick={setMenuToggleHandler}
           >
             {menuToggle ? (
-              <img src={close} alt="" />
+              <img src={close} alt="" className="close-icon" />
             ) : (
               <img src={hamburger_icon} alt="" />
             )}

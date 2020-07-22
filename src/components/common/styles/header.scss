@@ -12,9 +12,7 @@
       right: 0;
       bottom: 0;
       z-index: 12;
-      @media screen and (max-width: 991px) {
-        display: block;
-      }
+      display: none;
     }
   }
   .navbar-toggler {
@@ -29,10 +27,17 @@
       @media screen and (max-width: 991px) {
         width: 100%;
       }
+      &.close-icon{
+        @media screen and (max-width: 991px) {
+          width: 18px;
+        }
+      }
     }
   }
 }
 .navbar-brand {
   position: relative;
   z-index: 12;
+  font-size: 28px;
+  font-weight: 700;
 }

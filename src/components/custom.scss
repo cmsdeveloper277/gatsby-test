@@ -36,6 +36,10 @@
     max-width: 500px;
 }
 
+main{
+    padding: 100px 0 50px;
+}
+
 @media (min-width: 990px ) {
     .push-l-16 {
         margin-left: 16px;
@@ -54,3 +58,4 @@
         }
     }
 }
+

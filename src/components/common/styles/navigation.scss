@@ -16,7 +16,7 @@
     z-index: 10;
     display: block !important;
     background: #ffffff;
-    padding: 110px 15px 20px;
+    padding: 70px 15px 20px;
     left: 100%;
     transition: 0.3s all ease !important;
   }
@@ -29,7 +29,9 @@
   .navbar-nav {
     justify-content: flex-end;
     @media screen and (max-width: 991px) {
+      border-top: 1px solid rgba(0, 0, 0, 0.15);
       height: 100%;
+      padding-top: 25px;
     }
     ul {
       list-style: none;
@@ -50,11 +52,9 @@
         }
         &.select-plan {
           @media screen and (max-width: 991px) {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: 0;
+            display: inline-block;
+            padding: 140px 0 0;
+            width: 260px;
           }
         }
       }

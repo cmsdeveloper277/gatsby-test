@@ -21,8 +21,8 @@ const Layout = ({ children, bgcolor }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} bgcolor={bgcolor}/>
-        <main>{children}</main>
+      <Header siteTitle={data.site.siteMetadata.title} bgcolor={bgcolor} />
+      <main>{children}</main>
       <Footer />
     </>
   )
