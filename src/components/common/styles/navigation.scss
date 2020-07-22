@@ -1,0 +1,78 @@
+.navbar-light {
+  .navbar-toggler {
+    @media screen and (max-width: 991px) {
+      position: relative;
+      z-index: 12;
+    }
+  }
+}
+.navbar-collapse {
+  @media screen and (max-width: 991px) {
+    position: fixed !important;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100% !important;
+    z-index: 10;
+    display: block !important;
+    background: #ffffff;
+    padding: 110px 15px 20px;
+    left: 100%;
+    transition: 0.3s all ease !important;
+  }
+  &.show {
+    left: 0;
+  }
+  &.collapse:not(.show) {
+    display: block !important;
+  }
+  .navbar-nav {
+    justify-content: flex-end;
+    @media screen and (max-width: 991px) {
+      height: 100%;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: block;
+      @media screen and (max-width: 991px) {
+        padding: 0 0 30px;
+        height: 100%;
+        position: relative;
+      }
+      li {
+        display: inline-block;
+        margin-left: 25px;
+        @media screen and (max-width: 991px) {
+          display: block;
+          margin: 0 0 15px;
+        }
+        &.select-plan {
+          @media screen and (max-width: 991px) {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+          }
+        }
+      }
+    }
+    a {
+      @media screen and (max-width: 991px) {
+        display: block;
+        margin: 0;
+        padding: 7px 15px;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      &:hover {
+        @media screen and (max-width: 991px) {
+          background: rgba(#000000, 0.05);
+        }
+      }
+    }
+  }
+}

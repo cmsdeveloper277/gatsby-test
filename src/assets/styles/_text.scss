@@ -1,0 +1,83 @@
+
+.title_1 {
+    font-family: "Poppins-800";
+    font-size: 2.5rem;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    @media (max-width: 989px){
+        font-size: 1.875rem;
+    }
+}
+.title_2 {
+    font-family: "Poppins-800";
+    font-size: 1.875rem;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+}
+.title_3 {
+    font-family: "Poppins-600";
+    font-size: 1.5625rem;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+}
+.body_0 {
+    font-family: "Gotham-normal";
+    font-size: 2rem;
+    line-height: 120%;
+}
+.body_1 {
+    font-family: "Gotham-normal";
+    font-size: 1rem;
+    line-height: 120%;
+    @media (max-width: 989px){
+        line-height: 150%;
+    }
+}
+.body_1_bold {
+    font-family: "Gotham-bold";
+    font-size: 1rem;
+    line-height: 120%;
+}
+.body_1_bold_u {
+    font-family: "Gotham-bold";
+    font-size: 1rem;
+    line-height: 120%;
+    text-decoration-line: underline;
+    @media (max-width: 989px){
+        line-height: 150%;
+    }
+}
+.body_2 {
+    font-family: "Gotham-normal";
+    font-size: 0.75rem;
+    line-height: 120%;
+}
+.body_2_bold {
+    font-family: "Gotham-bold";
+    font-size: 0.75rem;
+    line-height: 120%;
+}
+.body_2_italic {
+    font-family: "Gotham-normalitalic";
+    font-size: 0.75rem;
+    line-height: 120%;
+}
+
+.subtitle_1 {
+    font-family: "Teko-bold";
+    font-size: 18px;
+    line-height: 120%;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.footertitle-1 {
+    font-family: "Poppins-600";
+    font-size: 25px;
+    line-height: 130%;
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+    @media (max-width: 520px) {
+        font-size: 16px;
+        line-height: 110%;
+    }
+}

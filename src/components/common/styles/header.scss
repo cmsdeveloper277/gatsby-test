@@ -1,0 +1,24 @@
+.top_menu {
+  .navbar {
+    padding: 15px 0;
+    position: relative;
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: rgba(#000000, 0.25);
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 12;
+      @media screen and (max-width: 991px) {
+        display: block;
+      }
+    }
+  }
+}
+.navbar-brand {
+  position: relative;
+  z-index: 12;
+}

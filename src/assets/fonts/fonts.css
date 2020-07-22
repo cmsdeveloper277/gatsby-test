@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Poppins-600";
+    src: url("./Poppins/Poppins-Bold.otf");
+}
+@font-face {
+    font-family: "Poppins-800";
+    src: url("./Poppins/Poppins-ExtraBold.otf");
+}
+@font-face {
+    font-family: "Gotham-normal";
+    src: url("./Gotham/Gotham-normal.otf");
+}
+@font-face {
+    font-family: "Gotham-bold";
+    src: url("./Gotham/Gotham-Bold.ttf");
+}
+@font-face {
+    font-family: "Gotham-normalitalic";
+    src: url("./Gotham/Gotham-normalItalic.otf");
+}
+@font-face {
+    font-family: "Teko-medium";
+    src: url("./Teko/Teko-Medium.ttf");
+}
+@font-face {
+    font-family: "Teko-bold";
+    src: url("./Teko/Teko-Bold.ttf");
+}

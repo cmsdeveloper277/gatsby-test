@@ -1,0 +1,92 @@
+
+// rewriting theme colors vars
+$theme-colors: (
+  "primary": $Text_Dark_2,
+  "white": $Text_White_1,
+  "grey-white": $Text_White_2,
+
+  "very-light": $Bg_White_1,
+  "grey": $Bg_Dark_1,
+  "grey-dark": $Cus_Bg_Dark,
+  "dark": $Bg_Dark_3,
+  "very-dark": $Bg_Dark_4,
+
+  "transparent": transparent,
+  "orange": $Orange_500,
+  "green": $Core_Green,
+  "purple": $Core_Purple,
+
+  "none": $None_color,
+);
+
+$Bd_Radius_2: 2px; // 2px; //cards
+$Bd_Radius_4: 4px; // 4px; //button, dropdown, input
+$Bd_Radius_6: 6px; // 6px; //small button
+$Bd_Radius_8: 8px; //8px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 520px,
+  md: 990px,
+  lg: 1212px,
+);
+
+$container-max-widths: (
+  md: 928px,
+  lg: 1180px,
+);
+
+// rewriting other bootstrap vars
+$enable-rounded: false;
+$grid-columns: 16;
+$grid-gutter-width: 32px !default;
+
+
+// number of cards per line for each breakpoint
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacerLoop: 16; // 16px == 1rem
+$step: 2; //loop step
+$max: 120; //max-size 120px
+
+@for $i from 1 through $max / $step {
+  $value: $i * $step;
+  $spacers: map-merge(
+    (
+      "#{$value}px": (
+        $spacer * ($value / $spacerLoop),
+      ),
+    ),
+    $spacers
+  );
+}
+
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: map-merge(
+  (
+    50px: 50px,
+    25: 25%,
+    30: 30%,
+    40: 40%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto,
+  ),
+  $sizes
+);
+
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$h1-font-size: $font-size-base * 2.5; //40px
+$h2-font-size: $font-size-base * 1.875; //30px
+$h3-font-size: $font-size-base * 1.5625; //25px
+$h4-font-size: $font-size-base * 1.25; //20px
+$h5-font-size: $font-size-base * 1.25; //20px
+
+$headings-font-family: "Poppins";
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";

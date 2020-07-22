@@ -1,0 +1,190 @@
+.btn {
+    font-family: "Gotham-bold";
+    padding: 10px 24px !important;
+    border-radius: $Bd_Radius_4 !important;
+    font-size: 17px !important;
+    line-height: 110% !important;
+    text-align: center;
+    color: $Text_White_1 !important;
+
+    &-primary {
+        background-color: $Orange_500 !important;
+        box-shadow: $Box_shadow_1 !important;
+        border-color: $Orange_500 !important;
+
+        &:hover {
+            background-color: $Orange_900 !important;
+            box-shadow: $Box_shadow_2 !important;
+            border-color: $Orange_900 !important;
+        }
+    
+        &:focus {
+            background-color: $Core_Orange !important;
+            box-shadow: $Box_shadow_3 !important;
+            border-color: $Core_Orange !important;
+        }
+    
+        &:disabled {
+            background-color: $Orange_100 !important;
+            box-shadow: $Box_shadow_1 !important;
+            border-color: $Orange_100 !important;
+        }
+    
+        &:not(:disabled):not(.disabled):active,
+        &:not(:disabled):not(.disabled):active:focus {
+            background-color: $Core_Orange !important;
+            box-shadow: $Box_shadow_3 !important;
+            border-color: $Core_Orange !important;
+        }
+    }
+
+    &-transparent {
+        background-color: transparent !important;
+        box-shadow: $Box_shadow_1 !important;
+        border-color: $Orange_500 !important;
+
+        &:hover {
+            background-color: $Orange_900 !important;
+            box-shadow: $Box_shadow_2 !important;
+            border-color: $Orange_900 !important;
+        }
+    
+        &:focus {
+            background-color: $Core_Orange !important;
+            box-shadow: $Box_shadow_3 !important;
+            border-color: $Core_Orange !important;
+        }
+    
+        &:disabled {
+            background-color: $Orange_100 !important;
+            box-shadow: $Box_shadow_1 !important;
+            border-color: $Orange_100 !important;
+        }
+    
+        &:not(:disabled):not(.disabled):active,
+        &:not(:disabled):not(.disabled):active:focus {
+            background-color: $Core_Orange !important;
+            box-shadow: $Box_shadow_3 !important;
+            border-color: $Core_Orange !important;
+        }
+    }
+
+    @media (max-width: 520px) {
+        width: 100%;
+    }
+}
+
+
+
+
+input {
+    width: 100%;
+    border-radius: $Bd_Radius_4;
+    padding: 0.75em 1em;
+    box-shadow: $Box_shadow_1;
+    background-color: $Bg_White_1;
+    border: 1px solid $Bg_White_2;
+    color: $Text_Dark_2;
+  
+    /* Change the white to any color ;) */
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      background-color: $Bg_White_1 !important;
+      -webkit-box-shadow: $Box_shadow_1;
+      box-shadow: $Box_shadow_1;
+      -webkit-box-shadow: $Box_shadow_1 !important;
+      -webkit-text-fill-color: $Text_White_1 !important;
+    }
+  
+    &:-internal-autofill-selected {
+      background-color: transparent;
+    }
+  
+    &::placeholder {
+      color: $Text_Dark_1;
+    }
+  
+    &:hover {
+      border: 1px solid $Orange_500;
+      box-shadow: $Box_shadow_3;
+    }
+  
+    &:focus,
+    &:active {
+      outline: $Core_Orange outset 1px;
+    }
+  
+    &:focus {
+      outline: none;
+      border: 1px solid $Orange_100;
+    }
+  
+    &:disabled {
+      background-color: $Text_Dark_2;
+      border: 1px solid $Bg_Dark_2;
+      box-shadow: none;
+      color: $Text_Dark_1;
+      cursor: not-allowed;
+    }
+  }
+  
+  textarea {
+    width: 100%;
+    max-width: 100%;
+    background-color: $Bg_White_1;
+    border-radius: $Bd_Radius_4;
+    box-shadow: $Box_shadow_1;
+    color: $Text_Dark_2;
+    border: 1px solid $Bg_White_2;
+    padding: 0.75em 1em;
+    height: 156px;
+    resize: none;
+    
+    /* Change the white to any color ;) */
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      background-color: $Bg_White_1 !important;
+      -webkit-box-shadow: $Box_shadow_1;
+      box-shadow: $Box_shadow_1;
+      -webkit-box-shadow: $Box_shadow_1 !important;
+      -webkit-text-fill-color: $Text_White_1 !important;
+    }
+  
+    &:-internal-autofill-selected {
+      background-color: transparent;
+    }
+  
+    &::placeholder {
+      color: $Text_Dark_1;
+    }
+  
+    &:hover {
+      border: 1px solid $Orange_500;
+      box-shadow: $Box_shadow_3;
+    }
+  
+    &:focus,
+    &:active {
+      outline: $Core_Orange outset 1px;
+    }
+  
+    &:focus {
+      outline: none;
+      border: 1px solid $Orange_100;
+    }
+  
+    &:disabled {
+      background-color: $Text_Dark_2;
+      border: 1px solid $Bg_Dark_2;
+      box-shadow: none;
+      color: $Text_Dark_1;
+      cursor: not-allowed;
+    }
+}
+  
+  
+  
