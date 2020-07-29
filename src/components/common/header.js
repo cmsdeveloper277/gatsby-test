@@ -10,11 +10,21 @@ import "./styles/navigation.scss"
 
 const Header = ({ siteTitle, bgcolor }) => {
   const [menuToggle, setMenuToggle] = React.useState(false)
+  const [isScrolled, setIsScrolled] = React.useState(false)
   const setMenuToggleHandler = () => {
     setMenuToggle(!menuToggle)
   }
+  
+  window.onscroll = function() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		setIsScrolled(true)
+	} else {
+		setIsScrolled(false)
+	}
+  };
+  
   return (
-    <div className={`top_menu fixed-top bg-${bgcolor}`}>
+    <div className={`top_menu fixed-top bg-${bgcolor} is-scrolled-${isScrolled}`}>
       <Container>
         <Navbar expand="md">
           <Navbar.Brand href="/">
